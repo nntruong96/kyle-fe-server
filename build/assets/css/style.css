@@ -1035,7 +1035,8 @@ button.third__btn,
   display: flex;
 }
 
-.trial__btn a {
+.trial__btn a,
+.trial__btn div {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
@@ -1053,7 +1054,8 @@ button.third__btn,
   margin-right: 14px;
 }
 
-.trial__btn a img {
+.trial__btn a img,
+.trial__btn div img {
   margin-right: 8px;
 }
 
@@ -1211,7 +1213,7 @@ button.third__btn,
   gap: 15px;
 }
 
-.result__chart__top__content h4 a {
+.result__chart__top__content h4 button {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
@@ -1222,11 +1224,13 @@ button.third__btn,
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
-  text-fill-color: transparent;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
 }
 
-.result__chart__info__blk a {
+.result__chart__info__blk button {
   font-family: 'Open Sans';
   font-style: normal;
   font-weight: 600;
@@ -1235,12 +1239,17 @@ button.third__btn,
   color: var(--white-color);
 }
 
-.result__chart__info__blk a img {
+.result__chart__info__blk button:hover,
+.result__chart__info__blk button:active {
+  color: var(--white-color);
+}
+
+.result__chart__info__blk button img {
   filter: invert(1);
   margin-right: 8px;
 }
 
-[data-theme='dark'] .result__chart__info__blk a img {
+[data-theme='dark'] .result__chart__info__blk button img {
   filter: none;
 }
 
