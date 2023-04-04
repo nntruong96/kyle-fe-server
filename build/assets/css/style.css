@@ -162,9 +162,11 @@ textarea {
   min-height: calc(100vh - 196px);
   padding-bottom: 30px;
 }
+
 .page-template {
   position: relative;
 }
+
 .dashboard__body__area {
   padding: 0px 45px 60px 60px;
   width: calc(100% - 230px);
@@ -236,8 +238,7 @@ textarea {
 }
 
 .sidebar__menu ul li a:hover span img {
-  filter: brightness(0) saturate(100%) invert(73%) sepia(55%) saturate(6827%) hue-rotate(161deg) brightness(92%)
-    contrast(101%);
+  filter: brightness(0) saturate(100%) invert(73%) sepia(55%) saturate(6827%) hue-rotate(161deg) brightness(92%) contrast(101%);
 }
 
 .sidebar__menu ul li a:hover {
@@ -1599,7 +1600,7 @@ button.third__btn,
   margin-left: 20px;
 }
 
-.cradit__card__strip p ~ p {
+.cradit__card__strip p~p {
   font-family: 'Work Sans';
   font-style: normal;
   font-weight: 400;
@@ -1917,7 +1918,7 @@ button.third__btn,
   margin: 0;
 }
 
-.invoice__processing > span {
+.invoice__processing>span {
   font-style: normal;
   font-weight: 600;
   font-size: 16px;
@@ -2079,12 +2080,12 @@ button.third__btn,
 }
 
 /* On mouse-over, add a grey background color */
-.single__radio__wrap:hover input ~ .checkmark {
+.single__radio__wrap:hover input~.checkmark {
   background-color: #ccc;
 }
 
 /* When the radio button is checked, add a blue background */
-.single__radio__wrap input:checked ~ .checkmark {
+.single__radio__wrap input:checked~.checkmark {
   background: #d9d9d9;
 }
 
@@ -2096,7 +2097,7 @@ button.third__btn,
 }
 
 /* Show the indicator (dot/circle) when checked */
-.single__radio__wrap input:checked ~ .checkmark:after {
+.single__radio__wrap input:checked~.checkmark:after {
   display: block;
 }
 
@@ -2157,11 +2158,11 @@ button.third__btn,
   width: 25px;
 }
 
-.toggle input:checked + .slider {
+.toggle input:checked+.slider {
   border-color: #2196f3;
 }
 
-.toggle input:checked + .slider::before {
+.toggle input:checked+.slider::before {
   border-color: #2196f3;
   background-color: #c6e5ff;
   transform: translateX(calc(var(--width) - var(--height)));
@@ -2200,11 +2201,11 @@ button.third__btn,
   transition: all 0.4s ease-in-out;
 }
 
-.toggle input:checked ~ .labels::after {
+.toggle input:checked~.labels::after {
   opacity: 0;
 }
 
-.toggle input:checked ~ .labels::before {
+.toggle input:checked~.labels::before {
   opacity: 1;
 }
 
